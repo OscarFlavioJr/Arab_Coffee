@@ -1,0 +1,593 @@
+@media screen and (min-width: 1080px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+  }
+  header .header {
+    background-color: rgb(130, 61, 28);
+    position: absolute;
+    max-height: 18vh;
+    min-width: 100%;
+    z-index: +3;
+  }
+
+  header .logo img {
+    max-width: 5%;
+    position: relative;
+    left: 45%;
+    top: 3px;
+  }
+
+  header .menu {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background: url(../Arab/assets/images/menu-hamburguer.png) no-repeat;
+    background-size: 30px;
+    background-position: center;
+    filter: invert(1);
+    cursor: pointer;
+  }
+
+  .links a {
+    text-decoration: none;
+    color: rgb(227, 219, 198);
+  }
+
+  .leftSide a {
+    position: absolute;
+    top: 26%;
+    left: 14%;
+    font-size: 25px;
+  }
+
+  #news {
+    position: absolute;
+    top: 26%;
+    left: 23%;
+  }
+
+  #merch {
+    position: absolute;
+    top: 26%;
+    left: 32%;
+  }
+
+  .rightSide a {
+    position: absolute;
+    top: 26%;
+    left: 56%;
+    font-size: 25px;
+  }
+
+  #about {
+    position: absolute;
+    top: 26%;
+    left: 65%;
+  }
+
+  #history {
+    position: absolute;
+    top: 26%;
+    left: 78%;
+  }
+
+  .links a:hover {
+    color: white;
+    transition: all 160ms ease-in 100ms;
+  }
+
+  .buttons img {
+    max-width: 25px;
+  }
+
+  .buttons button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 30%;
+    left: 92%;
+    cursor: pointer;
+  }
+
+  #cart {
+    position: absolute;
+    top: 30%;
+    left: 90%;
+  }
+
+  #search {
+    position: absolute;
+    top: 30%;
+    left: 92%;
+  }
+
+  #search-bar {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 90%;
+    min-height: 30px;
+    min-width: 60px;
+    border-radius: 10px;
+  }
+
+  #search-bar .active {
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 90%;
+    min-height: 30px;
+    min-width: 60px;
+    border-radius: 10px;
+  }
+
+  #doce h1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 40px;
+    color: rgb(227, 219, 198);
+  }
+
+  #doce button {
+    position: absolute;
+    top: 28%;
+    left: 41%;
+    font-size: 40px;
+    padding: 15px;
+    background-color: rgb(130, 61, 28);
+    color: rgb(227, 219, 198);
+    cursor: pointer;
+  }
+
+  #doce button:hover {
+    background-color: rgb(227, 219, 198);
+    color: rgb(130, 61, 28);
+    transition: all 170ms ease-in 170ms;
+  }
+
+  #sol h1 {
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    font-size: 40px;
+    color: rgb(130, 61, 28);
+  }
+
+  #sol button {
+    position: absolute;
+    top: 28%;
+    left: 41%;
+    font-size: 40px;
+    padding: 15px;
+    background-color: rgb(130, 61, 28);
+    color: rgb(227, 219, 198);
+    cursor: pointer;
+  }
+
+  #sol button:hover {
+    background-color: rgb(227, 219, 198);
+    color: rgb(130, 61, 28);
+    transition: all 170ms ease-in 170ms;
+  }
+  .carousel {
+    position: absolute;
+    top: 98%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .carousel .list {
+    height: 100%;
+    position: relative;
+  }
+  .carousel .list::before {
+    position: absolute;
+    width: var(--w-image);
+    height: 100%;
+    content: "";
+    top: 0;
+    left: calc(100% - calc(var(--w-image) * var(--calculate)));
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    z-index: 10;
+    pointer-events: none;
+  }
+  .carousel .list::after {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    content: "";
+    background-color: red;
+    width: 400px;
+    height: 300px;
+    z-index: 10;
+    pointer-events: none;
+    border-radius: 20px 50px 110px 230px;
+    filter: blur(150px);
+    opacity: 0.6;
+  }
+  .carousel .list .item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .carousel .list .item .image {
+    width: var(--w-image);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(100% - calc(var(--w-image) * var(--calculate)));
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    font-weight: 500;
+  }
+  .carousel .list .item .image img {
+    width: 90%;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 150px 50px #9e0c0c55);
+  }
+  .carousel .list .item .image figcaption {
+    font-family: "Aboreto";
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: right;
+    margin-bottom: 30px;
+    width: 70%;
+  }
+  .carousel .list .item .main-content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: calc(100% - calc(var(--w-image) * var(--calculate)));
+  }
+  .carousel .list .item .main-content .content {
+    padding: 150px 20px 20px 80px;
+  }
+  .carousel .list .item .main-content .content h2 {
+    font-size: 5em;
+    font-family: "Aboreto";
+  }
+  .carousel .list .item .main-content .content .price {
+    font-family: "Aboreto";
+    font-size: 3em;
+    margin: 20px 0;
+  }
+  .carousel .list .item .main-content .content .addToCard {
+    background-color: #803e1c;
+    color: #fff;
+    padding: 10px 30px;
+    font-family: Poppins;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+  }
+
+  .arrows {
+    position: absolute;
+    top: 20px;
+    left: 45%;
+    width: calc(100% - calc(var(--w-image) * var(--calculate)));
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    grid-template-rows: 50px;
+    justify-content: start;
+    gap: 10px;
+  }
+  .arrows button {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: black;
+    font-family: monospace;
+    font-size: large;
+    font-weight: bold;
+    line-height: 0;
+    box-shadow: 0 10px 40px #5555;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .arrows button:hover {
+    background-color: #eee5;
+  }
+  .carousel .list .item {
+    display: none;
+  }
+  .carousel .list .item.active,
+  .carousel .list .item.other_1,
+  .carousel .list .item.other_2 {
+    display: block;
+  }
+  .carousel .list .item.active {
+    z-index: 2;
+  }
+  .carousel .list .item.other_1,
+  .carousel .list .item.other_2 {
+    pointer-events: none;
+  }
+  .carousel .list .item.active .main-content {
+    animation: showContent 1s ease-in-out 1 forwards;
+  }
+  @keyframes showContent {
+    from {
+      clip-path: circle(0% at 70% 50%);
+    }
+    to {
+      clip-path: circle(100% at 70% 50%);
+    }
+  }
+  .next .item.other_1 {
+    z-index: 1;
+  }
+  .next .item .image img,
+  .next .item .image figcaption {
+    animation: effectNext 0.5s ease-in-out 1 forwards;
+  }
+  @keyframes effectNext {
+    from {
+      transform: translateX(calc(var(--transform-from)));
+    }
+    to {
+      transform: translateX(calc(var(--transform-from) - var(--w-image)));
+    }
+  }
+  .next .item.active .image {
+    --transform-from: var(--w-image);
+  }
+  .next .item.other_1 .image {
+    z-index: 3;
+    --transform-from: 0px;
+    overflow: hidden;
+  }
+  .next .item.other_2 .image {
+    z-index: 3;
+    --transform-from: calc(var(--w-image) * 2);
+  }
+  .arrows {
+    z-index: 10;
+  }
+  /* prev */
+  .prev .list .item .image img,
+  .prev .list .item .image figcaption {
+    animation: effectPrev 0.5s ease-in-out 1 forwards;
+  }
+  @keyframes effectPrev {
+    from {
+      transform: translateX(calc(var(--transform-from)));
+    }
+    to {
+      transform: translateX(calc(var(--transform-from) + var(--w-image)));
+    }
+  }
+  .prev .list .item.active .image {
+    --transform-from: calc(var(--w-image) * -1);
+    overflow: hidden;
+  }
+  .prev .list .item.other_1 .image {
+    --transform-from: 0px;
+    z-index: 3;
+  }
+  .prev .list .item.other_2 .image {
+    z-index: 3;
+    --transform-from: var(--w-image);
+  }
+  .prev .list .item.other_2 .main-content {
+    opacity: 0;
+  }
+  @media screen and (max-width: 1023px) {
+    :root {
+      --calculate: 1;
+      --w-image: 400px;
+    }
+    .carousel .list .item .main-content .content h2 {
+      font-size: 3em;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .carousel .list .item .image {
+      width: 100%;
+      left: 0;
+      justify-content: center;
+    }
+    .carousel .list .item .image figcaption {
+      color: #fff;
+      width: 100%;
+      text-align: center;
+    }
+    .carousel .list .item .main-content .content {
+      display: none;
+    }
+    .arrows {
+      left: 50%;
+      justify-content: center;
+    }
+  }
+  #loogo {
+    max-width: 280px;
+    position: absolute;
+    left: 7%;
+    top: 60%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+  }
+
+  html {
+    scroll-snap-type: y mandatory;
+  }
+
+  .section {
+    scroll-snap-align: start;
+  }
+
+  header .header {
+    background-color: rgb(130, 61, 28);
+    position: absolute;
+    max-height: 6vh;
+    min-width: 100%;
+    z-index: +3;
+  }
+
+  header .logo img {
+    max-width: 20%;
+    position: relative;
+    left: 40%;
+    top: 12px;
+  }
+
+  header .menu {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background: url(../Arab/assets/images/menu-hamburguer.png) no-repeat;
+    background-size: 30px;
+    background-position: center;
+    filter: invert(1);
+    cursor: pointer;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .buttons img {
+    max-width: 25px;
+  }
+
+  .buttons button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 30%;
+    left: 83%;
+  }
+
+  #cart {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+
+  #search-bar {
+    display: none;
+    position: absolute;
+    top: 6.5vh;
+    min-height: 30px;
+    min-width: 99%;
+    border-radius: 10px;
+    z-index: -2;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  #search-bar .active {
+    display: none;
+    position: absolute;
+    top: 6vh;
+    min-height: 30px;
+    min-width: 99%;
+    border-radius: 10px;
+    z-index: -2;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .swiper {
+    min-width: 100%;
+  }
+
+  .swiper-slide {
+    min-width: 100%;
+  }
+
+  #doce h1 {
+    width: 280px;
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    font-size: 25px;
+    color: rgb(227, 219, 198);
+  }
+
+  #doce button {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    font-size: 30px;
+    padding: 15px;
+    background-color: rgb(130, 61, 28);
+    color: rgb(227, 219, 198);
+    cursor: pointer;
+  }
+
+  #doce button:hover {
+    background-color: rgb(227, 219, 198);
+    color: rgb(130, 61, 28);
+    transition: all 170ms ease-in 170ms;
+  }
+
+  #sol h1 {
+    width: 280px;
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    font-size: 25px;
+    color: rgb(130, 61, 28);
+  }
+
+  #sol button {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    font-size: 30px;
+    padding: 15px;
+    background-color: rgb(130, 61, 28);
+    color: rgb(227, 219, 198);
+    cursor: pointer;
+  }
+
+  #sol button:hover {
+    background-color: rgb(227, 219, 198);
+    color: rgb(130, 61, 28);
+    transition: all 170ms ease-in 170ms;
+  }
+
+  @media all and (max-width: 1080px) {
+    img {
+      width: 100%;
+    }
+    video {
+      width: 100%;
+    }
+  }
+
+  .carousel .list .item .image {
+    width: 100%;
+    left: 0;
+    justify-content: center;
+  }
+  .carousel .list .item .image figcaption {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+  }
+  .carousel .list .item .main-content .content {
+    display: none;
+  }
+  .arrows {
+    left: 50%;
+    justify-content: center;
+  }
+}

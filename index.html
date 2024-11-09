@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arab Special Coffee</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="section">
+        <div class="header">
+          <a href="/" class="logo"
+            ><img src="assets/images/logo/Arab - 2.png" alt="logo"
+          /></a>
+          <div class="links">
+            <div class="leftSide">
+              <a href="">CAFÉ</a>
+              <a href="" id="news">NEWS</a>
+              <a href="" id="merch">PRODUTOS</a>
+            </div>
+            <div class="rightSide">
+              <a href="">MAPA</a>
+              <a href="" id="about">SOBRE NÓS</a>
+              <a href="" id="history">HISTÓRIA</a>
+            </div>
+          </div>
+          <div class="buttons">
+            <a href="" id="cart"
+              ><img src="assets/images/buttons/Design sem nome.svg" alt=""
+            /></a>
+            <div>
+              <button>
+                <img src="assets/images/buttons/search-bar.svg" alt="" /
+                id="search">
+              </button>
+              <input type="text" name="" id="search-bar" /
+              placeholder="Pesquise">
+              <label for="search-bar"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="body"></div>
+      </div>
+    </header>
+    <body>
+      <div class="section">
+        <div class="body">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <video autoplay muted loop>
+                  <source
+                    media="(min-width: 1080px)"
+                    src="assets/videos/Brown Elegant Coffee Shop Youtube Video Ad.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    media="(max-width:1079pc)"
+                    src="assets/videos/pag1v.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div class="swiper-slide" id="doce">
+                <picture>
+                  <!-- Imagem para telas maiores -->
+                  <source
+                    media="(min-width: 1080px)"
+                    srcset="assets/images/carousel/doce.png"
+                  />
+
+                  <!-- Imagem para telas menores -->
+                  <source
+                    media="(max-width: 1079px)"
+                    srcset="assets/images/carousel/docev.png"
+                  />
+
+                  <!-- Imagem de fallback para navegadores que não suportam o elemento <picture> -->
+                  <img
+                    src="assets/images/imagem-grande.jpg"
+                    alt="Imagem responsiva"
+                  />
+                </picture>
+
+                <h1>
+                  DA ORIGEM AO SABOR, PERFEIÇÃO EM CADA DETALHE! EXPERIMENTE A
+                  EXCELÊNCIA!
+                </h1>
+                <button>COMPRE JÁ!</button>
+              </div>
+              <div class="swiper-slide" id="sol">
+                <picture>
+                  <!-- Imagem para telas maiores -->
+                  <source
+                    media="(min-width: 1080px)"
+                    srcset="assets/images/carousel/sol.png"
+                  />
+
+                  <!-- Imagem para telas menores -->
+                  <source
+                    media="(max-width: 1079px)"
+                    srcset="assets/images/carousel/solv.png"
+                  />
+
+                  <!-- Imagem de fallback para navegadores que não suportam o elemento <picture> -->
+                  <img
+                    src="assets/images/imagem-grande.jpg"
+                    alt="Imagem responsiva"
+                  />
+                </picture>
+
+                <h1>
+                  EXPERIMENTE A HERANÇA DO CAFÉ! SOFISTICAÇÃO EM CADA DETALHE
+                </h1>
+                <button>EXPERIMENTE JÁ!</button>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <main>
+          <section class="carousel next">
+            <div class="list">
+              <article class="item other_1">
+                <div class="main-content" style="background-color: #917c3b">
+                  <div class="content">
+                    <h2>ARAB ESPECIAL, O SUPRASSUMO DA EXPERIÊNCIA</h2>
+                    <p class="price">R$ 80</p>
+                    <p class="description">
+                      Um café com uma impressionante pontuação de 86,5, é uma
+                      verdadeira joia entre os cafés especiais. Com um perfil de
+                      sabor equilibrado e complexo, ele entrega uma experiência
+                      sensorial única, destacando notas distintas que cativam
+                      tanto paladares exigentes quanto entusiastas do café de
+                      alta qualidade. Cultivado em terroirs selecionados e
+                      processado com o maior cuidado, este café representa o
+                      ápice da excelência, garantindo uma bebida com sabores
+                      ricos e aromas intensos. A sua classificação superior
+                      reflete a dedicação em cada etapa, desde a colheita até a
+                      xícara, tornando-o uma escolha perfeita para quem busca
+                      uma experiência de luxo em cada gole.
+                    </p>
+                    <button class="addToCard">COMPRAR</button>
+                  </div>
+                </div>
+                <figure class="image">
+                  <img
+                    src="assets/images/logo/Design sem nome (1).png"
+                    alt=""
+                  />
+                  <figcaption>ARAB ESPECIAL</figcaption>
+                </figure>
+              </article>
+              <article class="item active">
+                <div class="main-content" style="background-color: #e3dbc6">
+                  <div class="content">
+                    <h2>ARAB REGULAR, O MELHOR SABOR PELO MELHOR PREÇO</h2>
+                    <p class="price">R$ 60</p>
+                    <p class="description">
+                      Este café especial, com uma nota de 84 pontos, oferece uma
+                      experiência refinada e prazerosa, apesar de estar um pouco
+                      abaixo das classificações mais altas. Seu perfil sensorial
+                      revela nuances agradáveis, com sabores equilibrados e uma
+                      suavidade notável, que proporcionam uma excelente
+                      degustação. Proveniente de regiões selecionadas e
+                      produzido com cuidado, este café ainda se destaca por sua
+                      qualidade superior, trazendo aromas convidativos e uma
+                      acidez bem estruturada. Embora não atinja o patamar dos
+                      cafés de elite, ele mantém uma experiência sofisticada,
+                      perfeita para quem aprecia cafés de boa qualidade e um
+                      toque de distinção.
+                    </p>
+                    <button class="addToCard">COMPRAR</button>
+                  </div>
+                </div>
+                <figure class="image">
+                  <img src="assets/images/logo/Design sem nome (3).png" alt="" /
+                  id="loogo">
+                  <figcaption>
+                    ARAB REGULAR, O MELHOR SABOR PELO MELHOR PREÇO
+                  </figcaption>
+                </figure>
+              </article>
+            </div>
+            <div class="arrows">
+              <button id="prev"><</button>
+              <button id="next">></button>
+            </div>
+          </section>
+        </main>
+      </div>
+    </body>
+    <script src="app.js"></script>
+    <script src="page.js"></script>
+    <script src="ac.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
+  </body>
+</html>

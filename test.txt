@@ -1,0 +1,94 @@
+rgb(227, 219, 198) , #e3dbc6 Mais claro
+rgb(130, 61, 28), #803e1c Mais escura
+  z-index: -8;
+  max-width: 100%;
+  height: 650px;
+
+  600 x 1080px
+
+
+   <div class="section">
+        <div class="body">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <video autoplay muted loop>
+                  <source
+                    media="(min-width: 1080px)"
+                    src="assets/videos/Brown Elegant Coffee Shop Youtube Video Ad.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    media="(max-width:1079pc)"
+                    src="assets/videos/pag1v.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div class="swiper-slide" id="doce">
+                <picture>
+                  <!-- Imagem para telas maiores -->
+                  <source
+                    media="(min-width: 1080px)"
+                    srcset="assets/images/carousel/doce.png"
+                  />
+
+                  <!-- Imagem para telas menores -->
+                  <source
+                    media="(max-width: 1079px)"
+                    srcset="assets/images/carousel/docev.png"
+                  />
+
+                  <!-- Imagem de fallback para navegadores que não suportam o elemento <picture> -->
+                  <img
+                    src="assets/images/imagem-grande.jpg"
+                    alt="Imagem responsiva"
+                  />
+                </picture>
+
+                <h1>
+                  DA ORIGEM AO SABOR, PERFEIÇÃO EM CADA DETALHE! EXPERIMENTE A
+                  EXCELÊNCIA!
+                </h1>
+                <button>COMPRE JÁ!</button>
+              </div>
+              <div class="swiper-slide" id="sol">
+                <picture>
+                  <!-- Imagem para telas maiores -->
+                  <source
+                    media="(min-width: 1080px)"
+                    srcset="assets/images/carousel/sol.png"
+                  />
+
+                  <!-- Imagem para telas menores -->
+                  <source
+                    media="(max-width: 1079px)"
+                    srcset="assets/images/carousel/solv.png"
+                  />
+
+                  <!-- Imagem de fallback para navegadores que não suportam o elemento <picture> -->
+                  <img
+                    src="assets/images/imagem-grande.jpg"
+                    alt="Imagem responsiva"
+                  />
+                </picture>
+
+                <h1>
+                  EXPERIMENTE A HERANÇA DO CAFÉ! SOFISTICAÇÃO EM CADA DETALHE
+                </h1>
+                <button>EXPERIMENTE JÁ!</button>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
